@@ -43,7 +43,7 @@
               class="flex items-center justify-center gap-2 bg-[#F4F7FF] rounded-3xl p-2"
             >
               <img src="assets/checkbox.png" alt="" class="w-2/5" />
-              <p class="text-[#00303C] font-semibold text-xl">23</p>
+              <p class="text-[#00303C] font-semibold text-xl" id="total-completed">23</p>
             </div>
             <div>
               <button
@@ -72,7 +72,7 @@
             </div>
             <div>
               <p class="text-sm font-light text-[#00303C]">Task Assigned</p>
-              <p class="text-2xl font-bold">06</p>
+              <p class="text-2xl font-bold" id="task-count">06</p>
             </div>
           </div>
 
@@ -256,9 +256,9 @@
             <img src="assets/activity.png" alt="" />
             <h1 class="text-xl">Activity Log</h1>
           </div>
-          <button class="btn btn-primary">Clear History</button>
+          <button class="btn btn-primary" id="clear-btn">Clear History</button>
         </div>
-        <div class="history space-y-5 px-3 opacity-85">
+        <div class="space-y-5 px-3 opacity-85 py-4" id="history">
             <!-- dinamic -->
         </div>
       </section>
