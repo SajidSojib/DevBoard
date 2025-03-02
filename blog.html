@@ -1,11 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-</head>
-<body>
-    <h1>hi</h1>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      .poppins {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="bg-[#F4F7FF] poppins">
+    <header class="w-4/5 mx-auto py-4 mb-9">
+      <div class="navbar bg-base-100 rounded-xl">
+        <div class="flex-1">
+          <div class="flex items-center">
+            <img src="assets/logo.png" alt="" class="max-w-10" />
+            <a class="btn btn-ghost text-2xl text-[#00303C] p-1"
+              ><span class="font-extralight">Dev</span>
+              <span class="font-bold">Board</span></a
+            >
+          </div>
+        </div>
+        <div class="flex-none">
+          <button class="btn btn-primary text-xl rounded-xl" id="button">
+            Back to Desk
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="w-4/5 mx-auto space-y-5 pb-14">
+        <h1 class="text-3xl font-bold text-center">Question & Answer</h1>
+        <!-- qs 1 -->
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title font-semibold text-xl">
+          Question-1: What are the different ways to select an element in the DOM?
+        </div>
+        <div class="collapse-content mt-2">
+          <ol>
+            <li>1. getElementById</li>
+            <li>2. getElementsByClassName</li>
+            <li>3. getElementsByTagName</li>
+            <li>4. querySelector</li>
+            <li>5. querySelectorAll</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- qs 2 -->
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title font-semibold text-xl">
+          Question-2: What is the difference between innerHTML, innerText, and textContent ?
+        </div>
+        <div class="collapse-content mt-2">
+          <p><span class="font-semibold">innerHTMl: </span>It indicates the HTML content of an element.</p>
+          <p><span class="font-semibold">innerText: </span>It indicates the text content inside a HTML element.</p>
+          <p><span class="font-semibold">textContent: </span>It indicates the text content of s HTML contentand ignores the css property like display:none or visibility:hidden.</p>
+        </div>
+      </div>
+
+      <!-- qs 3 -->
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title font-semibold text-xl">
+            Question-3: What is event delegation in the DOM?
+        </div>
+        <div class="collapse-content mt-2">
+          Event delegation means controling the child element by adding eventListener to parent element.
+        </div>
+      </div>
+
+      <!-- qs 4 -->
+       <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title font-semibold text-xl">
+            Question-4: What is event bubbling in the DOM?
+        </div>
+        <div class="collapse-content mt-2">
+          The turm Event Bubbling refers to the spreading of an event from child element to parent element and then its parent element and so on. 
+        </div>
+      </div>
+
+      <!-- qs 5 -->
+       <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title font-semibold text-xl">
+            Question-5: How do you create, add, and remove elements using JavaScript?
+        </div>
+        <div class="collapse-content mt-2">
+          At first we need to create an element using document.createElement('elementName'). Then we need to get its parent and add it to the parent by using appendChild() and remove it by using removeChild().
+        </div>
+      </div>
+    </main>
+
+    <script src="blog.js"></script>
+  </body>
 </html>

@@ -50,3 +50,19 @@ document.getElementById('clear-btn').addEventListener('click',
         }
     }
 )
+
+document.getElementById('random').addEventListener('click',
+    function(){
+        const r=Math.floor(Math.random()*256);
+        const g=Math.floor(Math.random()*256);
+        const b=Math.floor(Math.random()*256);
+        const color=`rgb(${r},${g},${b})`;
+        document.body.style.backgroundColor=color;
+    }
+)
+
+document.getElementById('new-page').addEventListener('click',
+    function(){
+        window.location.href='blog.html';
+    }
+)
